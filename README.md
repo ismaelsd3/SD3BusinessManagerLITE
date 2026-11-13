@@ -23,3 +23,9 @@ O **SD3BusinessManagerLITE** é um sistema desktop voltado para microempresas e 
 * **Gestão de Clientes (`TelaClientes`):** Operações completas de CRUD (cadastro, listagem, edição e exclusão) com formatação automática de telefone e persistência na tabela `clientes`.
 * **Gestão de Ordens de Serviço (`TelaOrdensServico`):** Abertura, consulta, edição e exclusão de O.S. vinculadas aos clientes cadastrados (via chave estrangeira e `INNER JOIN`), com controle de status (`Aberta`, `Em Andamento`, `Concluída`) e valores.
 * **Persistência Relacional (`sd3_manager`):** Estruturação em banco de dados MySQL com integridade referencial e script SQL (`script_sd3_manager.sql`) incluso para implantação.
+
+## Como Executar o Projeto
+1. Importe o arquivo `script_sd3_manager.sql` no MySQL Workbench para criar o banco `sd3_manager` e suas tabelas.
+2. Ajuste usuário e senha do MySQL na classe `com.sd3.dao.ConexaoFactory`, caso necessário.
+3. Abra o projeto no Apache NetBeans IDE, execute **Clean and Build** e rode a aplicação (`F6`).
+4. Acesse utilizando o usuário padrão `admin` e senha `1234`.
