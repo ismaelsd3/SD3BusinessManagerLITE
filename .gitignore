@@ -1,0 +1,14 @@
+# Pastas compiladas pelo Maven / NetBeans
+target/
+build/
+dist/
+nbproject/private/
+
+# Arquivos temporários de sistema e IDE
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.DS_Store
+Thumbs.db
